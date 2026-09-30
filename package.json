@@ -1,0 +1,36 @@
+{
+  "name": "aula-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "lint": "eslint src --ext .ts --fix",
+    "vitest": "vitest",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^26.1.2",
+    "@types/supertest": "^7.2.1",
+    "eslint": "^8.57.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.2"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.1.2",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.11.0",
+    "knex": "^3.3.0",
+    "sqlite3": "^6.0.1",
+    "supertest": "^7.3.0",
+    "zod": "^4.5.4"
+  }
+}
